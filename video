@@ -1,0 +1,5 @@
+#! /bin/bash
+#/etc/init.d/lighttpd start
+sh -c "echo performance > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor"
+/home/pi/Projet_PING/raspberrypi_TEMPSREEL/raspberrypi_video &
+python3 /home/pi/Projet_PING/raspberrypi_TEMPSREEL/Traitement.py &
